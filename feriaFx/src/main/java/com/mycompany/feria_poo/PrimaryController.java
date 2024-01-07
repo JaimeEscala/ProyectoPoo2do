@@ -39,5 +39,10 @@ public class PrimaryController {
 
     @FXML
     private void administradorStans(MouseEvent event) {
+        try {
+            App.setRoot("administracionStans");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }
